@@ -128,7 +128,6 @@ export const RoomProvider: React.FC<Props> = ({ children }) => {
     return (
         <RoomContext.Provider value={{ ws, me, stream, peers }}>
             {children}
-            <button onClick={() => { setCounter(counter => counter + 1) }}>Call {counter}</button>
         </RoomContext.Provider>
     )
 }
